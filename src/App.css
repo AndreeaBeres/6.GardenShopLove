@@ -1,0 +1,112 @@
+body {
+  background-color: #F5E6CA;
+  color: #5A3E36;
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  background-color: #D991A0;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #C97B8B;
+}
+
+/* This CSS is for layout and styling of the product cards and container */
+
+/* Parent container that holds the product cards */
+#shop .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This centers the products horizontally */
+  gap: 20px; /* Add space between the product cards */
+  padding: 50px 0;
+}
+
+/* Product card styles */
+.product {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Width of each product card */
+  text-align: center; /* Centers the text and image inside each product card */
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Style for product images */
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Title and price of product */
+.product h3, .product p {
+  color: #5A3E36; /* Dark brown for readability */
+}
+
+/* Button inside the product card */
+.product button {
+  background-color: #D991A0;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product button:hover {
+  background-color: #B87D90;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #shop .container {
+      flex-direction: column; /* Stack products vertically on smaller screens */
+      align-items: center;
+  }
+
+  .product {
+      width: 80%; /* Adjust the width of products on smaller screens */
+  }
+}
+
+/* Header styling */
+header {
+  background-color: #D991A0; /* Dusty Rose */
+  color: white;
+  padding: 20px 0; /* Padding top and bottom to give it space */
+  text-align: center; /* Center the text horizontally */
+  font-size: 24px;
+  width: 100%; /* Ensure the header spans the full width */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Vertically center content */
+}
+
+#shop {
+  padding: 50px 0;
+  background-color: #F5E6CA;  /* Soft Beige */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the products horizontally */
+  flex-wrap: wrap; /* Ensures products wrap onto the next line if they exceed the container width */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers the content */
+  flex-wrap: wrap; /* Allows products to move to the next line if there are too many */
+  gap: 20px; /* Optional: Adds space between the products */
+  max-width: 1200px; /* Optional: Sets a maximum width for better responsiveness */
+  width: 100%;
+}
+

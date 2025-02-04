@@ -1,0 +1,13 @@
+/* Header styling */
+header {
+    background-color: #D991A0; /* Dusty Rose */
+    color: white;
+    padding: 20px 0; /* Padding top and bottom to give it space */
+    text-align: center; /* Center the text horizontally */
+    font-size: 24px;
+    width: 100%; /* Ensure the header spans the full width */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Vertically center content */
+}
+

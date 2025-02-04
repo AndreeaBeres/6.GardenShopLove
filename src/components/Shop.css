@@ -1,0 +1,60 @@
+/* This CSS is for layout and styling of the product cards and container */
+
+/* Parent container that holds the product cards */
+#shop .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* This centers the products horizontally */
+    gap: 20px; /* Add space between the product cards */
+    padding: 50px 0;
+}
+
+/* Product card styles */
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Width of each product card */
+    text-align: center; /* Centers the text and image inside each product card */
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Style for product images */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Title and price of product */
+.product h3, .product p {
+    color: #5A3E36; /* Dark brown for readability */
+}
+
+/* Button inside the product card */
+.product button {
+    background-color: #D991A0;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #B87D90;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #shop .container {
+        flex-direction: column; /* Stack products vertically on smaller screens */
+        align-items: center;
+    }
+
+    .product {
+        width: 80%; /* Adjust the width of products on smaller screens */
+    }
+}

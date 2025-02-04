@@ -1,0 +1,28 @@
+#about-us {
+    background-color: #F5E6CA; /* Soft Beige */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    color: #D991A0; /* Dusty Rose */
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.1rem;
+    color: #5A3E36; /* Dark brown for readability */
+    margin-bottom: 15px;
+}
+
+#about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-us li {
+    font-size: 1rem;
+    color: #5A3E36;
+    margin-bottom: 10px;
+}
